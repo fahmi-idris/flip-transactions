@@ -26,7 +26,6 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({
   children,
 }) => {
   const classes = classNames([isOpen && 'show', className]);
-
   return (
     <Wrapper className={classes} dropDirection={dropDirection} floatRight={floatRight}>
       {React.Children.map(children, (Item: React.ReactElement<any>) =>

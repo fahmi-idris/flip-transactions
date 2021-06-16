@@ -105,7 +105,6 @@ class Dropdown extends React.Component<DropdownProps, DropdownState> {
     // TODO: use new React context instead of cloneElement
     return (
       <DropdownWrapper className={classes} block={block} dropDirection={dropDirection} disabled={disabled} {...rest}>
-        {/* eslint-disable-next-line */}
         {React.Children.map(children, (Item: React.ReactElement<any>) => {
           return Item &&
             Item.type &&

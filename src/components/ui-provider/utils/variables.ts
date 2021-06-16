@@ -6,9 +6,14 @@ export const colors = {
   green: '#56b586',
   orange: '#fd6542',
   muted: '#9FADBD',
+  mutedSecondary: '#D1D1D1',
+  mutedThird: '#E7EAEE',
+  mutedFourth: '#F8F8FB',
   gray1: '#A6ABBD',
   gray2: '#E4F0FF',
   gray3: '#EBEDF0',
+  danger: '#E83761',
+  warning: '#F2C94C',
 };
 
 export const systemFonts =
