@@ -11,6 +11,7 @@ import { formatGrandTotal, formatTransactionsReponse } from './utils/formatter';
 const initialValue: TransactionContextObject = {
   isLoading: true,
   transactions: [],
+  transaction: undefined,
   total: 0,
 };
 
@@ -21,6 +22,11 @@ const TransactionsProvider: FC = ({ children }) => {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [total, setTotal] = useState<number>(0);
   const [errors, setErrors] = useState<string>();
+
+  const transaction = (transactionId: string) => {
+    const [find] = transactions.filter(({ id }) => id === transactionId);
+    return find;
+  };
 
   useEffect(() => {
     api<DataMap<Transaction>>('/frontend-test')
@@ -43,6 +49,7 @@ const TransactionsProvider: FC = ({ children }) => {
       value={{
         isLoading,
         transactions,
+        transaction,
         total,
         errors,
       }}

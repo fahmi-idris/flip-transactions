@@ -1,5 +1,5 @@
-/* eslint-disable camelcase */
 import * as React from 'react';
+import { useHistory } from 'react-router-dom';
 
 import { Transaction } from 'interfaces/transactions';
 
@@ -14,6 +14,7 @@ interface TransactionItemListProps {
 }
 
 const TransactionItemList: React.FC<TransactionItemListProps> = ({ transactions }) => {
+  const history = useHistory();
   return (
     <Box margin="20px 0">
       {transactions.map((data) => {
@@ -26,6 +27,8 @@ const TransactionItemList: React.FC<TransactionItemListProps> = ({ transactions 
             borderRadius={radii.sm}
             mb="10px"
             borderLeft={`4px solid ${status === 'SUCCESS' ? colors.green : colors.orange}`}
+            className="pointer"
+            onClick={() => history.push(`/${id}/transaction`)}
           >
             <Box display="flex" alignItems="center">
               <Box flex="1">

@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 export type TransactionStatus = 'PENDING' | 'SUCCESS';
 
 export type TransactionFilter = 'NAME-ASC' | 'NAME-DESC' | 'DATE-ASC' | 'DATE-DESC';
@@ -21,6 +20,7 @@ export interface Transaction {
 export interface TransactionContextObject {
   isLoading: boolean;
   transactions: Transaction[];
+  transaction?: (transactionId: string) => Transaction;
   total: number;
   errors?: string;
 }

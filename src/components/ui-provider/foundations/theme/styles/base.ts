@@ -100,21 +100,8 @@ const base = css`
     }
   }
 
-  .drag-handle {
-    cursor: move;
-    display: inline-block;
-
-    &::before {
-      content: '......';
-      display: inline-block;
-      width: 10px;
-      word-break: break-word;
-      white-space: normal;
-      letter-spacing: 2px;
-      line-height: 4.5px;
-      text-align: center;
-      height: 18px;
-    }
+  .pointer {
+    cursor: pointer;
   }
 
   /* https://github.com/reach/reach-ui/blob/master/packages/skip-nav/styles.css */

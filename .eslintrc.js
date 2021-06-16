@@ -35,6 +35,8 @@ module.exports = {
     // Disable multiline expressions and lines that start with `[` or `(`.
     'no-unexpected-multiline': 'error',
 
+    camelcase: 'off',
+
     // Allow setting square bracket notation.
     'dot-notation': 'off',
 

@@ -11,7 +11,7 @@ const TransactionDetail = React.lazy(
 const Transaction: React.FC = () => (
   <React.Suspense fallback={<ScreenLoading />}>
     <Switch>
-      <Route path="/" component={TransactionList} />
+      <Route path="/" component={TransactionList} exact />
       <Route path="/:transactionId/transaction" component={TransactionDetail} />
       <Route render={() => <Redirect to="/" />} />
     </Switch>

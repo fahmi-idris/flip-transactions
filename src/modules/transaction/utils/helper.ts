@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 import { SortingType } from 'interfaces/common';
 import { Transaction, TransactionFilter, TransactionStatus } from 'interfaces/transactions';
 
