@@ -86,7 +86,7 @@ const Wrapper = styled('div')<DropdownMenuProps>`
   background-clip: padding-box;
   z-index: 1000;
   background: ${colors.white};
-  border: 1px solid ${colors.muted};
+  border: 1px solid ${colors.mutedSecondary};
   box-sizing: border-box;
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.05);
   padding: 10px 0;

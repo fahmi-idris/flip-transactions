@@ -20,6 +20,7 @@ const base = css`
     color: ${colors.black};
     font-size: ${typeScale.body.fontSize}px;
     line-height: ${typeScale.body.lineHeight}px;
+    background-color: ${colors.cloud};
   }
 
   a {

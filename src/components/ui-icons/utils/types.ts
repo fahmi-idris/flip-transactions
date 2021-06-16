@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { colors } from 'components/ui-provider';
 
 export interface BaseIconProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
@@ -7,5 +8,5 @@ export interface BaseIconProps extends React.SVGProps<SVGSVGElement> {
 /* eslint-disable import/prefer-default-export */
 export const iconDefaultProps: BaseIconProps = {
   size: 24,
-  fill: '#3B4856',
+  fill: colors.muted,
 };

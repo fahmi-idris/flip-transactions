@@ -2,7 +2,6 @@
 /* eslint-disable react/sort-comp */
 /* eslint-disable react/no-find-dom-node */
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 import styled from 'styled-components';
 
 import { classNames } from 'utils/classnames';
@@ -80,13 +79,8 @@ class Dropdown extends React.Component<DropdownProps, DropdownState> {
     this.setState({ isOpen: !isOpen });
   }
 
-  handleClickOutside(e: React.SyntheticEvent): void {
+  handleClickOutside(_: React.SyntheticEvent): void {
     try {
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-      if (ReactDOM.findDOMNode(this)!.contains(e.target as any)) {
-        // if click event on this element then do nothing
-        return;
-      }
       this.setState({ isOpen: false });
     } catch (error) {
       // do nothing

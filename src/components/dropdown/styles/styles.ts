@@ -27,7 +27,7 @@ export const DropdownToggleButton: any = styled(Button)<DropdownToggleButtonProp
   text-align: left;
   border-radius: 4px;
   background: ${colors.white};
-  border: 1px solid ${colors.muted};
+  border: 1px solid ${colors.mutedSecondary};
   color: ${colors.black};
   box-shadow: none;
   padding: 16px 24px;
@@ -45,7 +45,7 @@ export const DropdownToggleButton: any = styled(Button)<DropdownToggleButtonProp
 
   &:hover {
     color: ${colors.black};
-    border-color: ${colors.muted};
+    border-color: ${colors.mutedSecondary};
     background-color: ${colors.white} !important;
     color: ${colors.black} !important;
   }
@@ -54,7 +54,7 @@ export const DropdownToggleButton: any = styled(Button)<DropdownToggleButtonProp
   &:active {
     outline: none;
     box-shadow: none;
-    border-color: ${colors.muted} !important;
+    border-color: ${colors.mutedSecondary} !important;
     background-color: ${colors.white} !important;
     color: ${colors.black} !important;
   }

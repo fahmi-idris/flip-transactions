@@ -2,7 +2,7 @@
 export const colors = {
   white: '#ffffff',
   black: '#000000',
-  main: '#f3f7f9',
+  cloud: '#f3f7f9',
   green: '#56b586',
   orange: '#fd6542',
   muted: '#9FADBD',

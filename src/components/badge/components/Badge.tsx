@@ -1,6 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
+import { colors } from 'components/ui-provider';
+
 import { BadgeBaseProps } from '../types/types';
 import { BadgeStyles } from './styles';
 
@@ -26,7 +28,7 @@ Badge.defaultProps = {
   style: undefined,
   block: false,
   variant: 'primary',
-  badgeColor: 'green',
+  badgeColor: colors.green,
 };
 
 Badge.displayName = 'Badge';
